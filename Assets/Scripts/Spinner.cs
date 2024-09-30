@@ -16,6 +16,7 @@ public class Spinner : MonoBehaviour
         float angle = Random.Range(-180f, 180f);
 
         // Your code here
+        transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
     }
 
@@ -25,6 +26,6 @@ public class Spinner : MonoBehaviour
         /* Spin the object at a constant speed. */
 
         // Your code here
-
+        transform.Rotate(Vector3.up, speed * Time.deltaTime);
     }
 }

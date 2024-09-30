@@ -28,7 +28,7 @@ public class Platform : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             /* Your code here */
-
+            teleporter.SwitchToScene(targetSceneId);
         }
     }
 }
